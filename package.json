@@ -1,0 +1,20 @@
+{
+  "name": "tira",
+  "version": "0.0.0",
+  "description": "Translation library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woundedlands/Tira.git"
+  },
+  "author": "woundedlands",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woundedlands/Tira/issues"
+  },
+  "homepage": "https://github.com/woundedlands/Tira#readme"
+}
