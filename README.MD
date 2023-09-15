@@ -1,0 +1,1 @@
+JS Library to translate your text :3
