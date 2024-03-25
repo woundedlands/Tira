@@ -13,7 +13,7 @@
 
 - 🚀 Maximal typesafety
 - 🤝 Really easy to use.
-- 📂 Tiny (~5KB zipped)
+- 📂 Tiny (~5KB gzip, zero deps)
 - 🕙 Performant
 
 ##### **Maximal typesafety**
