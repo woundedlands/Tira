@@ -1,6 +1,6 @@
 # Tira - Translate
 
-## Simple yet powerful typescript language translation library. Maximal type safety with minimal effort
+## Simple yet powerful typescript internationalization (i18n) library. Maximal type safety with minimal effort
 
 ### Links:
 
