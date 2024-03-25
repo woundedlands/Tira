@@ -4,7 +4,8 @@
 
 ### Links:
 
-[GitHub](https://github.com/woundedlands/Tira)
+- [GitHub](https://github.com/woundedlands/Tira)
+- [npm](https://www.npmjs.com/package/tira-translate)
 
 ### About:
 
