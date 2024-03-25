@@ -4,6 +4,7 @@
     "lib": ["es2017"],
     "target": "ES2022",
     "module": "ES2022",
+    "moduleResolution": "node",
     "outDir": "./dist",
     "declaration": true,
     "esModuleInterop": true,

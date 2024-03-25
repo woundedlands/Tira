@@ -1,6 +1,7 @@
 import { TiraError } from "./error"
 import { Locale } from "./locale"
 import { Token, TokenOptions } from "./token"
+import { memoize } from "lodash"
 
 type OptionsIfDefined<T> = T extends undefined ? never : TokenOptions
 
@@ -11,7 +12,7 @@ export class Translation<T extends Locale<any>> {
     this._locale = locale
   }
 
-  get = this._get.bind(this)
+  get = memoize(this._get.bind(this))
 
   private _get<T extends undefined>(token: Token<T>): string
   private _get<T extends TokenOptions>(token: Token<T>, options: T): string
