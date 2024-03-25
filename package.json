@@ -1,6 +1,6 @@
 {
   "name": "tira-translate",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "Easiest and Typesafest Localization Library for browser and node",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -45,14 +45,12 @@
     "url": "https://github.com/woundedlands/Tira/issues"
   },
   "homepage": "https://github.com/woundedlands/Tira#readme",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@types/lodash": "^4.17.0",
-    "rollup": "^4.13.0",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.3"
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^8.2.3",
+    "rollup": "^2.79.0"
   }
 }
