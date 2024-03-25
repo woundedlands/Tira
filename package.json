@@ -1,6 +1,6 @@
 {
   "name": "tira-translate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Translation library",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -9,6 +9,26 @@
     "dist",
     "README.md",
     "LICENSE"
+  ],
+  "keywords": [
+    "i18n",
+    "typescript",
+    "internationalization",
+    "typesafe",
+    "l10n",
+    "localization",
+    "internationalization library",
+    "localization library",
+    "localization engine",
+    "lightweight",
+    "svelte",
+    "angular",
+    "react-native",
+    "nextjs",
+    "vue",
+    "nuxtjs",
+    "solid",
+    "nodejs"
   ],
   "scripts": {
     "build": "rollup -c",

@@ -4,17 +4,16 @@ type TokensTree = {
   [key: string]: TokensTree | Token<any>
 }
 
-export class Locale<T extends TokensTree> {
-  private _tokens: T
+/**
+ * Definition of locale
+ */
+export class Locale<Tree extends TokensTree> {
+  protected _tokens: Tree
   private _paths = new Map<string, Token<any>>()
 
-  constructor(translationsTree: T) {
+  protected constructor(translationsTree: Tree) {
     this._tokens = translationsTree
     this._setPathOnTokens(translationsTree)
-  }
-
-  getTokens() {
-    return this._tokens
   }
 
   /**
@@ -39,5 +38,26 @@ export class Locale<T extends TokensTree> {
         this._setPathOnTokens(currentValue, [...currentPath, key])
       }
     })
+  }
+}
+
+/**
+ * Definition of base locale.
+ * Allows you to create child locales with same interface as base.
+ */
+export class BaseLocale<Tree extends TokensTree> extends Locale<Tree> {
+  constructor(translationsTree: Tree) {
+    super(translationsTree)
+  }
+
+  get tokens() {
+    return this._tokens
+  }
+
+  /**
+   * Creates child translation with same interface as BaseLocation
+   */
+  createChild(tree: Tree): Locale<Tree> {
+    return new Locale(tree)
   }
 }

@@ -30,3 +30,9 @@ export class Token<T extends TokenOptions | undefined> {
     return this._path!
   }
 }
+
+export function token<T extends TokenOptions | undefined>(
+  options: ConstructorParameters<typeof Token<T>>[0],
+) {
+  return new Token<T>(options)
+}
