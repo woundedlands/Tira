@@ -1,8 +1,9 @@
 {
   "include": ["src/**/*"],
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    "lib": ["es2017"],
+    "target": "ES2022",
+    "module": "ES2022",
     "outDir": "./dist",
     "declaration": true,
     "esModuleInterop": true,
