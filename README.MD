@@ -36,7 +36,7 @@ All simplest as possible for user
 npm install tira-translate
 ```
 
-**Important**: your typescript version should be >= 4.4.2
+**Important**: your typescript version should be >= ~4.7.2
 
 ### Usage:
 
